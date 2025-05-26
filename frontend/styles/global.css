@@ -1,0 +1,57 @@
+/* Font Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Variaveis */
+:root {
+  --color1: #ff1d44;
+  --color2: #fbebaf;
+  --color3: #74bf9d;
+  --color4: #56a292;
+  --color5: #1c8080;
+
+  --defaultFont: "Inter", sans-serif;
+  --defaultAnimation: 0.3s ease-in-out;
+}
+
+/* HTML */
+html {
+  font-size: 16px;
+}
+
+/* Body */
+body {
+  font-size: 1rem;
+  font-family: var(--defaultFont);
+}
+
+/* Ul de livros */
+ul#lista-livros {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Item de livro */
+.item-livro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--color2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-livro img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.item-livro h3{
+  text-align: center;
+}
