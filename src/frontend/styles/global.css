@@ -1,0 +1,27 @@
+/* Font Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Variaveis */
+:root {
+  --color1: #ff1d44;
+  --color2: #fbebaf;
+  --color3: #74bf9d;
+  --color4: #56a292;
+  --color5: #1c8080;
+
+  --defaultFont: "Inter", sans-serif;
+  --defaultAnimation: 0.3s ease-in-out;
+}
+
+/* HTML */
+html {
+  font-size: 16px;
+}
+
+/* Body */
+body {
+  background-color: #000;
+
+  font-size: 1rem;
+  font-family: var(--defaultFont);
+}

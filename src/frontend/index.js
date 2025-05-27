@@ -19,7 +19,9 @@ async function carregarLivros() {
 
       // Conteúdo do item do livro
       itemLivro.innerHTML = `
-    <img src="${livro.capaURL}" alt="${livro.descricao}"/>
+    <img src="${livro.capaURL || "https://github.com/joseisaacpy.png"}" alt="${
+        livro.descricao
+      }"/>
     <h3>${livro.nome}</h3>
     `;
       // Li adiciona item do livro
